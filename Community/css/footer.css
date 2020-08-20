@@ -1,0 +1,47 @@
+footer {
+  background: #000;
+  color: #fff;
+}
+.logo2 {
+  height: 50px;
+  margin: 30px 20px 5px;
+}
+
+.content1 {
+  margin: 20px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.content2 {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-weight: bold;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.icons {
+  margin-left: 14%;
+  margin-top: 4%;
+}
+
+.icons .icon-link {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer2 {
+  background: #333;
+  color: grey;
+  padding: 3px;
+  text-align: center;
+}
+ul:not(.browser-default) {
+  padding-left: 0;
+  list-style-type: none;
+}

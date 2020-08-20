@@ -1,0 +1,200 @@
+<!-- Question Asker Form -->
+
+<!-- Answer Keeper Form -->
+<html>
+  <head>
+    <title>LearnHub - Discuss Your Problems with others</title>
+  </head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+  <link
+    rel="shortcut icon"
+    href="./assets/logo & favicon/logo.png"
+    type="image/x-icon"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="./css/navabr.css" />
+
+  <link rel="stylesheet" href="./css/common-navbar-style.css" />
+
+  <link rel="stylesheet" href="./css/footer.css" />
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet" />
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="vendor/venobox/venobox.css" rel="stylesheet" />
+  <link
+    href="vendor/owl.carousel/assets/owl.carousel.min.css"
+    rel="stylesheet"
+  />
+  <link href="vendor/aos/aos.css" rel="stylesheet" />
+
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container-fluid d-flex">
+        <div class="logo mr-auto">
+          <a href="#"
+            ><img
+              class="logo-one"
+              src="./assets/logo & favicon/logo.png"
+              alt="logo one"
+          /></a>
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="#header">Home</a></li>
+            <li><a href="#hero">About Us</a></li>
+            <li><a href="#schedule">Courses</a></li>
+            <li><a href="project.html">Practice</a></li>
+            <li><a href="#team">Contact Us</a></li>
+
+            <li class="get-started" style="color: red;">
+              <a href="#contact">Register For Exam</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h1 class="head text-center">Discuss Your Problems with others</h1>
+
+    <form
+      class="jumbotron"
+      method="POST"
+      action="./php/connectdb.php"
+      onsubmit="return validation()"
+    >
+      <div class="form-group">
+        <label for="exampleInputName1">Your Name *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputName1"
+          name="username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Your Email *</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          name="emailid"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputpassword1">Your Question *</label>
+        <textarea
+          type="text"
+          class="form-control"
+          rows="10"
+          cols="30"
+          id="exampleInputquestion1"
+          name="question"
+        ></textarea>
+      </div>
+      <small class="form-text tetx-muted"
+        >Copy the question and paste it here</small
+      >
+      <br />
+      <button type="submit" class="btn btn-dark" name="submit">Submit</button>
+      <br />
+    </form>
+
+    <footer>
+      <div class="footer-top" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+          <div class="row" style="font-family: Circular;">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <a href="./index.html">
+                <img
+                  class="logo2"
+                  src="./assets/logo & favicon/logo.png"
+                  alt="logo two"
+                />
+              </a>
+              <p class="content1" style="text-align: left;">
+                LearnHub which is aimed towards providing a learning ecosystem
+                for technology Career Acceleration
+              </p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="content2">SOCIAL MEDIA</div>
+              <div class="icons">
+                <a class="icon-link" href="" target="_blank"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a class="icon-link" href="" target="_blank"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+                <a class="icon-link" href="" target="_blank"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i
+                ></a>
+                <a class="icon-link" href="" target="_blank"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i></a
+                ><br />
+                <a href="mailto:learnhub@gmail.com" class="mail-link"
+                  >learnhub@gmail.com</a
+                >
+              </div>
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+
+        <div class="footer2" style="font-family: Circular;">
+          &copy;2020 <span>LearnHub</span>
+          All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./javascript/navbar.js"></script>
+
+    <script src="./javascript/question-asker-validation-form.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="vendor/php-email-form/validate.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="vendor/venobox/venobox.min.js"></script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

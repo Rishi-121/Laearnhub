@@ -1,0 +1,24 @@
+.head {
+  padding-top: 10rem;
+}
+
+form {
+  margin: 5% 15%;
+  font-family: circular;
+}
+
+@media (max-width: 767px) {
+  form {
+    margin: 5%;
+  }
+}
+
+.mail-link {
+  font-family: circular;
+  color: #ff0000;
+}
+
+.mail-link:hover {
+  text-decoration: none;
+  color: #ff0000;
+}
